@@ -2725,11 +2725,13 @@ input, select, textarea {
 		}
 
 		.spotlight:nth-child(1) {
-			background-color: rgba(0, 0, 0, 0.075);
+			/* Change here spotlight one */
+			background-color: rgba(29, 36, 42, 0.9);
 		}
 
 		.spotlight:nth-child(2) {
-			background-color: rgba(0, 0, 0, 0.15);
+			/* Change here spotlight two */
+			background-color: rgba(29, 36, 42, 0.9);
 		}
 
 		.spotlight:nth-child(3) {
@@ -2767,11 +2769,13 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.spotlight .image {
-				width: 45%;
+				/* Change here for picture width */
+				width: 40%;
 			}
 
 			.spotlight .content {
-				width: 55%;
+				/* Change here for picture width */
+				width: 60%;
 			}
 
 		}
@@ -4003,6 +4007,7 @@ input, select, textarea {
 	}
 
 	body.landing #footer {
+		/*  Here change colour of footer  */
 		background-color: rgba(29, 36, 42, 0.9);
 	}
 
