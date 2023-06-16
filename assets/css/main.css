@@ -23,7 +23,7 @@ PAUL!!!!!! HIT CONTROL+F and search "here" this will help you change the colours
 	--text: #cfd2d9;
 	--button: #96a2ae;
 	--un: #004cff;
-	--clear: rgba(0, 0, 0, 0);
+	--clear: transparent;
 }
 
 html, body, div, span, applet, object,
