@@ -17,6 +17,15 @@ PAUL!!!!!! HIT CONTROL+F and search "here" this will help you change the colours
 
 */
 
+:root{
+	--body: #1d2025e4;
+	--banner: #1d2025;
+	--text: #cfd2d9;
+	--button: #96a2ae;
+	--un: #004cff;
+	--clear: transparent;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -97,7 +106,8 @@ input, select, textarea {
 	}
 
 	body {
-		background: #2e3842;
+		background: var(--body);
+		/* background: #2e3842; */
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -113,7 +123,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		/* Change Here the colour of text */
-		color: #fff;
+		color: var(--text);
 		font-family: "Open Sans", Helvetica, sans-serif;
 		font-size: 15pt;
 		font-weight: 400;
@@ -162,7 +172,7 @@ input, select, textarea {
 
 	strong, b {
 		/* Here unknown */
-		color: #fff;
+		color: var(--text);
 		font-weight: 600;
 	}
 
@@ -176,7 +186,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		/* Change here all header colour */
-		color: #fff;
+		color: var(--text);
 		font-weight: 800;
 		letter-spacing: 0.225em;
 		line-height: 1em;
@@ -247,7 +257,7 @@ input, select, textarea {
 	hr {
 		border: 0;
 		/* here unknown */
-		border-bottom: solid 2px #fff;
+		border-bottom: solid 2px var(--text);
 		margin: 3em 0;
 	}
 
@@ -257,7 +267,7 @@ input, select, textarea {
 
 	blockquote {
 		/* here unknown */
-		border-left: solid 4px #fff;
+		border-left: solid 4px var(--text);
 		font-style: italic;
 		margin: 0 0 2em 0;
 		padding: 0.5em 0 0.5em 2em;
@@ -265,7 +275,7 @@ input, select, textarea {
 
 	code {
 		/* here unknown */
-		background: rgba(144, 144, 144, 0.25);
+		background: var(--button);
 		border-radius: 3px;
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
@@ -1776,7 +1786,7 @@ input, select, textarea {
 
 	header p {
 		/* here unknown */
-		color: rgba(255, 255, 255, 0.5);
+		color: var(--button);
 		position: relative;
 		top: -0.25em;
 	}
@@ -1796,7 +1806,9 @@ input, select, textarea {
 	}
 
 		header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
-			border-bottom: solid 2px #fff;
+			/* Change here maybe */
+			border-bottom: var(--text);
+			/* border-bottom: solid 2px #cfd2d9; */
 			display: inline-block;
 			padding-bottom: 1em;
 			position: relative;
@@ -1810,7 +1822,7 @@ input, select, textarea {
 
 		header.major p {
 			/* here unknown */
-			color: #fff;
+			color: var(--text);
 			top: 0;
 		}
 
@@ -1837,7 +1849,7 @@ input, select, textarea {
 	}
 
 	label {
-		color: #fff;
+		color: var(--text);
 		display: block;
 		font-size: 0.9em;
 		font-weight: 600;
@@ -1853,7 +1865,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background-color: rgba(144, 144, 144, 0.25);
+		background-color:var(--button);
 		border-radius: 3px;
 		border: none;
 		color: inherit;
@@ -1877,7 +1889,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			box-shadow: 0 0 0 2px #21b2a6;
+			box-shadow: 0 0 0 2px var(--text);
 		}
 
 	select {
@@ -1925,7 +1937,7 @@ input, select, textarea {
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-			color: #fff;
+			color: var(--text);
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1em;
@@ -1951,7 +1963,7 @@ input, select, textarea {
 
 			input[type="checkbox"] + label:before,
 			input[type="radio"] + label:before {
-				background: rgba(144, 144, 144, 0.25);
+				background: var(--button);
 				border-radius: 3px;
 				content: '';
 				display: inline-block;
@@ -1967,14 +1979,14 @@ input, select, textarea {
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
-			background: #2e3842;
-			color: #fff;
+			background: var(--body);
+			color: var(--text);
 			content: '\f00c';
 		}
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			box-shadow: 0 0 0 2px #21b2a6;
+			box-shadow: 0 0 0 2px var(--text);
 		}
 
 	input[type="checkbox"] + label:before {
@@ -1986,22 +1998,22 @@ input, select, textarea {
 	}
 
 	::-webkit-input-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgb(255, 0, 0) !important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgb(255, 0, 0) !important;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgb(255, 0, 0) !important;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgb(255, 0, 0) !important;
 		opacity: 1.0;
 	}
 
@@ -2009,7 +2021,7 @@ input, select, textarea {
 
 	.box {
 		border-radius: 3px;
-		border: solid 2px #fff;
+		border: solid 2px var(--un);
 		margin-bottom: 2em;
 		padding: 1.5em;
 	}
@@ -2069,7 +2081,7 @@ input, select, textarea {
 			-ms-transform: rotate(-45deg);
 			transform: rotate(-45deg);
 			border-radius: 3px;
-			border: solid 2px #fff;
+			border: solid 2px var(--un);
 			display: inline-block;
 			font-size: 1.35em;
 			height: calc(3em + 2px);
@@ -2097,16 +2109,17 @@ input, select, textarea {
 
 		/* here Icons Dimond, heart, </> */
 		.icon.style1 {
-			color: #00ffcc;
+			color: var(--button);
+			/* color: #00ffcc; */
 		}
 
 		.icon.style2 {
-			color: #00ffcc;
+			color: var(--button);
 			/* color: #00f0ff; */
 		}
 
 		.icon.style3 {
-			color: #00ffcc;
+			color: var(--button);
 			/* color: #76ddff; */
 		}
 
@@ -2182,7 +2195,7 @@ input, select, textarea {
 		}
 
 			ul.alt li {
-				border-top: solid 1px #fff;
+				border-top: solid 1px var(--text);
 				padding: 0.5em 0;
 			}
 
@@ -2227,10 +2240,10 @@ input, select, textarea {
 			}
 
 		ul.actions.stacked {
-			-moz-flex-direction: column;
-			-webkit-flex-direction: column;
-			-ms-flex-direction: column;
-			flex-direction: column;
+			-moz-flex-direction: row;
+			-webkit-flex-direction: row;
+			-ms-flex-direction: row;
+			flex-direction: row;
 			margin-left: 0;
 		}
 
@@ -2363,13 +2376,13 @@ input, select, textarea {
 	}
 
 		table tbody tr {
-			border: solid 1px #fff;
+			border: solid 1px var(--un);
 			border-left: 0;
 			border-right: 0;
 		}
 
 			table tbody tr:nth-child(2n + 1) {
-				background-color: rgba(144, 144, 144, 0.25);
+				background-color: var(--un);
 			}
 
 		table td {
@@ -2377,7 +2390,7 @@ input, select, textarea {
 		}
 
 		table th {
-			color: #fff;
+			color: var(--un);
 			font-size: 0.9em;
 			font-weight: 600;
 			padding: 0 0.75em 0.75em 0.75em;
@@ -2385,11 +2398,11 @@ input, select, textarea {
 		}
 
 		table thead {
-			border-bottom: solid 2px #fff;
+			border-bottom: solid 2px var(--un);
 		}
 
 		table tfoot {
-			border-top: solid 2px #fff;
+			border-top: solid 2px var(--un);
 		}
 
 		table.alt {
@@ -2397,7 +2410,7 @@ input, select, textarea {
 		}
 
 			table.alt tbody tr td {
-				border: solid 1px #fff;
+				border: solid 1px var(--un);
 				border-left-width: 0;
 				border-top-width: 0;
 			}
@@ -2433,11 +2446,14 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		background-color: transparent;
+		/* Change here color of button */
+		background-color: var(--button);
 		border-radius: 3px;
 		border: 0;
-		box-shadow: inset 0 0 0 2px #fff;
-		color: #fff;
+		/* Change Here Border around button */
+		box-shadow: inset 0 0 0 2px var(--button);
+		/* Change here Text inside buttons */
+		color: var(--text);
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8em;
@@ -2460,7 +2476,9 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: rgba(144, 144, 144, 0.25);
+			/* Change here colour for hover */
+			background-color: var(--un);
+			box-shadow: none !important;
 		}
 
 		input[type="submit"]:active,
@@ -2468,7 +2486,9 @@ input, select, textarea {
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: rgba(144, 144, 144, 0.5);
+			/* dont know */
+			background-color: var(--un);
+			box-shadow: none !important;
 		}
 
 		input[type="submit"].icon:before,
@@ -2508,10 +2528,11 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			/* Here Stupid ass button*/
-			background-color: #ed4933;
+			/* change here button color*/
+			background-color: var(--button);
 			box-shadow: none !important;
-			color: #ffffff !important;
+			/* change here color of text */
+			color: var(--text) !important;
 		}
 
 			input[type="submit"].primary:hover,
@@ -2519,7 +2540,8 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #ef5e4a !important;
+				/* Change here button hover colour */
+				background-color: var(--un) !important;
 			}
 
 			input[type="submit"].primary:active,
@@ -2527,7 +2549,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #eb341c !important;
+				background-color: var(--un) !important;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2670,7 +2692,7 @@ input, select, textarea {
 				.features li {
 					padding: 3em 0 1em 0 ;
 					background-color: transparent !important;
-					border-top: solid 2px #fff;
+					border-top: solid 2px var(--text);
 					width: 100%;
 				}
 
@@ -2691,6 +2713,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		border: 100px var(--un);
 	}
 
 		.spotlight .image {
@@ -2698,12 +2721,12 @@ input, select, textarea {
 			-webkit-order: 1;
 			-ms-order: 1;
 			order: 1;
-			border-radius: 0;
+			border-radius: 10;
 			width: 40%;
 		}
 
 			.spotlight .image img {
-				border-radius: 0;
+				border-radius: 10;
 				width: 100%;
 			}
 
@@ -2726,44 +2749,49 @@ input, select, textarea {
 
 		.spotlight:nth-child(1) {
 			/* Change here spotlight one */
-			background-color: rgba(29, 36, 42, 0.9);
+			background-color: var(--clear);
+			border-color: var(--un);
+			border-top: var(--un);
+			border-width: 100;
+			/* background-color: rgba(29, 36, 42, 0.9); */
 		}
 
 		.spotlight:nth-child(2) {
 			/* Change here spotlight two */
-			background-color: rgba(29, 36, 42, 0.9);
+			background-color: var(--clear);
+			/* background-color: rgba(29, 36, 42, 0.9); */
 		}
 
 		.spotlight:nth-child(3) {
-			background-color: rgba(0, 0, 0, 0.225);
+			background-color: var(--clear);
 		}
 
 		.spotlight:nth-child(4) {
-			background-color: rgba(0, 0, 0, 0.3);
+			background-color: var(--clear);
 		}
 
 		.spotlight:nth-child(5) {
-			background-color: rgba(0, 0, 0, 0.375);
+			background-color: var(--clear);
 		}
 
 		.spotlight:nth-child(6) {
-			background-color: rgba(0, 0, 0, 0.45);
+			background-color: var(--clear);
 		}
 
 		.spotlight:nth-child(7) {
-			background-color: rgba(0, 0, 0, 0.525);
+			background-color: var(--clear);
 		}
 
 		.spotlight:nth-child(8) {
-			background-color: rgba(0, 0, 0, 0.6);
+			background-color: var(--clear);
 		}
 
 		.spotlight:nth-child(9) {
-			background-color: rgba(0, 0, 0, 0.675);
+			background-color: var(--clear);
 		}
 
 		.spotlight:nth-child(10) {
-			background-color: rgba(0, 0, 0, 0.75);
+			background-color: var(--clear);
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -2844,45 +2872,62 @@ input, select, textarea {
 
 		/* Change Here */
 		.wrapper.style1 {
-			background-color: rgba(29, 36, 42, 0.9);
+			/* Change here about me text */
+			background-color: var(--body);
+			/* background-color: #34454227; */
+			/* background-color: rgba(29, 36, 42, 0.9); */
 			/* background-color: #21b2a6; */
-			color: #c8ece9;
+			color: var(--text);
 		}
 
 			.wrapper.style1 strong, .wrapper.style1 b {
-				color: #ffffff;
+				background-color: var(--body);
+				/* background-color: rgba(29, 36, 42, 0.9); */
+				/* color: #cfd2d9fff; */
 			}
 
 			.wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6 {
-				color: #ffffff;
+				background-color: var(--clear);
+				/* background-color: rgba(29, 36, 42, 0.9); */
+				/* color: #cfd2d9fff; */
 			}
 
 			.wrapper.style1 hr {
-				border-color: rgba(0, 0, 0, 0.125);
+				background-color: var(--body);
+				/* background-color: rgba(29, 36, 42, 0.9); */
+				/* border-color: rgba(0, 0, 0, 0.125); */
 			}
 
 			.wrapper.style1 blockquote {
-				border-color: rgba(0, 0, 0, 0.125);
+				background-color: var(--body);
+				/* border-color: rgba(0, 0, 0, 0.125); */
 			}
 
 			.wrapper.style1 code {
-				background: rgba(255, 255, 255, 0.075);
+				background-color: var(--body);
+				/* background: rgba(255, 255, 255, 0.075); */
 			}
 
 			.wrapper.style1 header p {
-				color: #a6e0db;
+				background-color: var(--body);
+				/* color: #a6e0db; */
 			}
 
 			.wrapper.style1 header.major h2, .wrapper.style1 header.major h3, .wrapper.style1 header.major h4, .wrapper.style1 header.major h5, .wrapper.style1 header.major h6 {
-				border-color: rgba(0, 0, 0, 0.125);
+				/* Change here for divisable line */
+				border-color: var(--text);
+				/* border-color: rgb(0, 0, 0); */
 			}
 
 			.wrapper.style1 header.major p {
-				color: #c8ece9;
+				/* Change here about me text */
+				background-color: var(--clear);
+				/* color: #c8ece9; */
 			}
 
 			.wrapper.style1 label {
-				color: #ffffff;
+				background-color: var(--clear);
+				/* color: #cfd2d9fff; */
 			}
 
 			.wrapper.style1 input[type="text"],
@@ -2890,7 +2935,8 @@ input, select, textarea {
 			.wrapper.style1 input[type="email"],
 			.wrapper.style1 select,
 			.wrapper.style1 textarea {
-				background-color: rgba(255, 255, 255, 0.075);
+				/* background-color: rgba(29, 36, 42, 0.9); */
+				background-color: var(--un);
 			}
 
 			.wrapper.style1 select {
@@ -2898,76 +2944,78 @@ input, select, textarea {
 			}
 
 				.wrapper.style1 select option {
-					color: #ffffff;
-					background: #21b2a6;
+					color: var(--un);
+					background: var(--un);
 				}
 
 			.wrapper.style1 input[type="checkbox"] + label,
 			.wrapper.style1 input[type="radio"] + label {
-				color: #c8ece9;
+				color: var(--un);
 			}
 
 				.wrapper.style1 input[type="checkbox"] + label:before,
 				.wrapper.style1 input[type="radio"] + label:before {
-					background: rgba(255, 255, 255, 0.075);
+					background: var(--un);
 				}
 
 			.wrapper.style1 input[type="checkbox"]:checked + label:before,
 			.wrapper.style1 input[type="radio"]:checked + label:before {
-				background: #ffffff;
-				color: #21b2a6;
+				background: var(--un);
+				color: var(--un);
 			}
 
 			.wrapper.style1 ::-webkit-input-placeholder {
-				color: #a6e0db !important;
+				color: var(--un) !important;
 			}
 
 			.wrapper.style1 :-moz-placeholder {
-				color: #a6e0db !important;
+				color: var(--un) !important;
 			}
 
 			.wrapper.style1 ::-moz-placeholder {
-				color: #a6e0db !important;
+				color: var(--un) !important;
 			}
 
 			.wrapper.style1 :-ms-input-placeholder {
-				color: #a6e0db !important;
+				color: var(--un) !important;
 			}
 
 			.wrapper.style1 .formerize-placeholder {
-				color: #a6e0db !important;
+				color: var(--un) !important;
 			}
 
 			.wrapper.style1 .icon.major {
-				border-color: rgba(0, 0, 0, 0.125);
+				/* Change here Border around Dimond heart other thing */
+				border-color: var(--button);
+				/* border-color: rgba(44, 38, 38, 0.125); */
 			}
 
 			.wrapper.style1 ul.alt li {
-				border-color: rgba(0, 0, 0, 0.125);
+				border-color: var(--un);
 			}
 
 			.wrapper.style1 table tbody tr {
-				border-color: rgba(0, 0, 0, 0.125);
+				border-color: var(--un);
 			}
 
 				.wrapper.style1 table tbody tr:nth-child(2n + 1) {
-					background-color: rgba(255, 255, 255, 0.075);
+					background-color: var(--un);
 				}
 
 			.wrapper.style1 table th {
-				color: #ffffff;
+				color: var(--un);
 			}
 
 			.wrapper.style1 table thead {
-				border-color: rgba(0, 0, 0, 0.125);
+				border-color: var(--un);
 			}
 
 			.wrapper.style1 table tfoot {
-				border-color: rgba(0, 0, 0, 0.125);
+				border-color: var(--un);
 			}
 
 			.wrapper.style1 table.alt tbody tr td {
-				border-color: rgba(0, 0, 0, 0.125);
+				border-color: var(--un);
 			}
 
 			.wrapper.style1 input[type="submit"],
@@ -2975,8 +3023,8 @@ input, select, textarea {
 			.wrapper.style1 input[type="button"],
 			.wrapper.style1 button,
 			.wrapper.style1 .button {
-				box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.125);
-				color: #ffffff;
+				box-shadow: inset 0 0 0 2px var(--un);
+				color: var(--un);
 			}
 
 				.wrapper.style1 input[type="submit"]:hover,
@@ -2984,7 +3032,7 @@ input, select, textarea {
 				.wrapper.style1 input[type="button"]:hover,
 				.wrapper.style1 button:hover,
 				.wrapper.style1 .button:hover {
-					background-color: rgba(255, 255, 255, 0.075);
+					background-color: var(--un);
 				}
 
 				.wrapper.style1 input[type="submit"]:active,
@@ -2992,62 +3040,65 @@ input, select, textarea {
 				.wrapper.style1 input[type="button"]:active,
 				.wrapper.style1 button:active,
 				.wrapper.style1 .button:active {
-					background-color: rgba(255, 255, 255, 0.2);
+					background-color: var(--un);
 				}
 
 			@media screen and (max-width: 736px) {
 
 				.wrapper.style1 .features li {
-					border-top-color: rgba(0, 0, 0, 0.125);
+					border-top-color: var(--un);
 				}
 
 			}
 		
 		/* Change here this colour is for the projects*/
 		.wrapper.style2 {
-			background-color: rgba(29, 36, 42, 0.9);
+			background-color: var(--body);
+			border: 1px var(--un);
+			/* background-color: rgba(29, 36, 42, 0.9); */
 			/* background-color: #2e3842; */
 		}
 		/* Change here if I want to add information like a blog style I can place it in here */
 		.wrapper.style3 {
-			background-color: #5053937e;
-			color: #d3d4e4;
+			background-color: var(--body);
+			/* background-color: #5053937e; */
+			color: var(--un);
 		}
 
 			.wrapper.style3 strong, .wrapper.style3 b {
-				color: #ffffff;
+				color: var(--un);
 			}
 
 			.wrapper.style3 h2, .wrapper.style3 h3, .wrapper.style3 h4, .wrapper.style3 h5, .wrapper.style3 h6 {
-				color: #ffffff;
+				color: var(--un);
 			}
 
 			.wrapper.style3 hr {
-				border-color: rgba(0, 0, 0, 0.125);
+				border-color: var(--un);
 			}
 
 			.wrapper.style3 blockquote {
-				border-color: rgba(0, 0, 0, 0.125);
+				border-color: var(--un);
 			}
 
 			.wrapper.style3 code {
-				background: rgba(255, 255, 255, 0.075);
+				background: var(--un);
 			}
 
 			.wrapper.style3 header p {
-				color: #b9bad4;
+				color: var(--un);
 			}
 
 			.wrapper.style3 header.major h2, .wrapper.style3 header.major h3, .wrapper.style3 header.major h4, .wrapper.style3 header.major h5, .wrapper.style3 header.major h6 {
-				border-color: rgba(0, 0, 0, 0.125);
+				border-color: var(--un);
 			}
 
 			.wrapper.style3 header.major p {
-				color: #d3d4e4;
+				color: var(--un);
 			}
 
 			.wrapper.style3 label {
-				color: #ffffff;
+				color: var(--un);
 			}
 
 			.wrapper.style3 input[type="text"],
@@ -3055,7 +3106,7 @@ input, select, textarea {
 			.wrapper.style3 input[type="email"],
 			.wrapper.style3 select,
 			.wrapper.style3 textarea {
-				background-color: rgba(255, 255, 255, 0.075);
+				background-color: var(--un);
 			}
 
 			.wrapper.style3 select {
@@ -3063,32 +3114,32 @@ input, select, textarea {
 			}
 
 				.wrapper.style3 select option {
-					color: #ffffff;
-					background: #505393;
+					color: var(--un);
+					background: var(--un);
 				}
 
 			.wrapper.style3 input[type="checkbox"] + label,
 			.wrapper.style3 input[type="radio"] + label {
-				color: #d3d4e4;
+				color: var(--un);
 			}
 
 				.wrapper.style3 input[type="checkbox"] + label:before,
 				.wrapper.style3 input[type="radio"] + label:before {
-					background: rgba(255, 255, 255, 0.075);
+					background: var(--un);
 				}
 
 			.wrapper.style3 input[type="checkbox"]:checked + label:before,
 			.wrapper.style3 input[type="radio"]:checked + label:before {
-				background: #ffffff;
-				color: #505393;
+				background: var(--un);
+				color: var(--un);
 			}
 
 			.wrapper.style3 ::-webkit-input-placeholder {
-				color: #b9bad4 !important;
+				color: var(--un) !important;
 			}
 
 			.wrapper.style3 :-moz-placeholder {
-				color: #b9bad4 !important;
+				color: var(--un) !important;
 			}
 
 			.wrapper.style3 ::-moz-placeholder {
@@ -3096,43 +3147,43 @@ input, select, textarea {
 			}
 
 			.wrapper.style3 :-ms-input-placeholder {
-				color: #b9bad4 !important;
+				color: var(--un) !important;
 			}
 
 			.wrapper.style3 .formerize-placeholder {
-				color: #b9bad4 !important;
+				color: var(--un) !important;
 			}
 
 			.wrapper.style3 .icon.major {
-				border-color: rgba(0, 0, 0, 0.125);
+				border-color: var(--un);
 			}
 
 			.wrapper.style3 ul.alt li {
-				border-color: rgba(0, 0, 0, 0.125);
+				border-color: var(--un);
 			}
 
 			.wrapper.style3 table tbody tr {
-				border-color: rgba(0, 0, 0, 0.125);
+				border-color: var(--un);
 			}
 
 				.wrapper.style3 table tbody tr:nth-child(2n + 1) {
-					background-color: rgba(255, 255, 255, 0.075);
+					background-color: var(--un);
 				}
 
 			.wrapper.style3 table th {
-				color: #ffffff;
+				color: var(--un);
 			}
 
 			.wrapper.style3 table thead {
-				border-color: rgba(0, 0, 0, 0.125);
+				border-color: var(--un);
 			}
 
 			.wrapper.style3 table tfoot {
-				border-color: rgba(0, 0, 0, 0.125);
+				border-color: var(--un);
 			}
 
 			.wrapper.style3 table.alt tbody tr td {
-				border-color: rgba(0, 0, 0, 0.125);
+				border-color: var(--un);
 			}
 
 			.wrapper.style3 input[type="submit"],
@@ -3140,8 +3191,8 @@ input, select, textarea {
 			.wrapper.style3 input[type="button"],
 			.wrapper.style3 button,
 			.wrapper.style3 .button {
-				box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.125);
-				color: #ffffff;
+				box-shadow: inset 0 0 0 2px var(--un);
+				color: var(--un);
 			}
 
 				.wrapper.style3 input[type="submit"]:hover,
@@ -3149,7 +3200,7 @@ input, select, textarea {
 				.wrapper.style3 input[type="button"]:hover,
 				.wrapper.style3 button:hover,
 				.wrapper.style3 .button:hover {
-					background-color: rgba(255, 255, 255, 0.075);
+					background-color: var(--un);
 				}
 
 				.wrapper.style3 input[type="submit"]:active,
@@ -3157,44 +3208,44 @@ input, select, textarea {
 				.wrapper.style3 input[type="button"]:active,
 				.wrapper.style3 button:active,
 				.wrapper.style3 .button:active {
-					background-color: rgba(255, 255, 255, 0.2);
+					background-color: var(--un);
 				}
 
 			@media screen and (max-width: 736px) {
 
 				.wrapper.style3 .features li {
-					border-top-color: rgba(0, 0, 0, 0.125);
+					border-top-color: var(--un);
 				}
 
 			}
 
 		.wrapper.style4 {
-			background-color: transparent;
+			background-color: var(--clear);
 		}
 
 		.wrapper.style5 {
-			background-color: #ffffff;
-			color: #4E4852;
+			background-color: var(--un);
+			color: var(--un);
 		}
 
 			.wrapper.style5 strong, .wrapper.style5 b {
-				color: #2E3842;
+				color: var(--un);
 			}
 
 			.wrapper.style5 h2, .wrapper.style5 h3, .wrapper.style5 h4, .wrapper.style5 h5, .wrapper.style5 h6 {
-				color: #2E3842;
+				color: var(--un);
 			}
 
 			.wrapper.style5 hr {
-				border-color: #dfdfdf;
+				border-color: var(--un);
 			}
 
 			.wrapper.style5 blockquote {
-				border-color: #dfdfdf;
+				border-color: var(--un);
 			}
 
 			.wrapper.style5 code {
-				background: rgba(0, 0, 0, 0.0375);
+				background: var(--un);
 			}
 
 			.wrapper.style5 header p {
@@ -3202,15 +3253,15 @@ input, select, textarea {
 			}
 
 			.wrapper.style5 header.major h2, .wrapper.style5 header.major h3, .wrapper.style5 header.major h4, .wrapper.style5 header.major h5, .wrapper.style5 header.major h6 {
-				border-color: #dfdfdf;
+				border-color: var(--un);
 			}
 
 			.wrapper.style5 header.major p {
-				color: #4E4852;
+				color: var(--un);
 			}
 
 			.wrapper.style5 label {
-				color: #2E3842;
+				color: var(--un);
 			}
 
 			.wrapper.style5 input[type="text"],
@@ -3218,7 +3269,7 @@ input, select, textarea {
 			.wrapper.style5 input[type="email"],
 			.wrapper.style5 select,
 			.wrapper.style5 textarea {
-				background-color: rgba(0, 0, 0, 0.0375);
+				background-color: var(--un);
 			}
 
 			.wrapper.style5 select {
@@ -3226,76 +3277,76 @@ input, select, textarea {
 			}
 
 				.wrapper.style5 select option {
-					color: #2E3842;
-					background: #ffffff;
+					color: var(--un);
+					background: var(--un);
 				}
 
 			.wrapper.style5 input[type="checkbox"] + label,
 			.wrapper.style5 input[type="radio"] + label {
-				color: #4E4852;
+				color: var(--un);
 			}
 
 				.wrapper.style5 input[type="checkbox"] + label:before,
 				.wrapper.style5 input[type="radio"] + label:before {
-					background: rgba(0, 0, 0, 0.0375);
+					background: var(--un);
 				}
 
 			.wrapper.style5 input[type="checkbox"]:checked + label:before,
 			.wrapper.style5 input[type="radio"]:checked + label:before {
-				background: #2E3842;
-				color: #ffffff;
+				background: var(--un);
+				color: var(--un);
 			}
 
 			.wrapper.style5 ::-webkit-input-placeholder {
-				color: #8E8892 !important;
+				color: var(--un) !important;
 			}
 
 			.wrapper.style5 :-moz-placeholder {
-				color: #8E8892 !important;
+				color: var(--un) !important;
 			}
 
 			.wrapper.style5 ::-moz-placeholder {
-				color: #8E8892 !important;
+				color: var(--un) !important;
 			}
 
 			.wrapper.style5 :-ms-input-placeholder {
-				color: #8E8892 !important;
+				color: var(--un) !important;
 			}
 
 			.wrapper.style5 .formerize-placeholder {
-				color: #8E8892 !important;
+				color: var(--un) !important;
 			}
 
 			.wrapper.style5 .icon.major {
-				border-color: #dfdfdf;
+				border-color: var(--un);
 			}
 
 			.wrapper.style5 ul.alt li {
-				border-color: #dfdfdf;
+				border-color: var(--un);
 			}
 
 			.wrapper.style5 table tbody tr {
-				border-color: #dfdfdf;
+				border-color: var(--un);
 			}
 
 				.wrapper.style5 table tbody tr:nth-child(2n + 1) {
-					background-color: rgba(0, 0, 0, 0.0375);
+					background-color: var(--un);
 				}
 
 			.wrapper.style5 table th {
-				color: #2E3842;
+				color: var(--un);
 			}
 
 			.wrapper.style5 table thead {
-				border-color: #dfdfdf;
+				border-color: var(--un);
 			}
 
 			.wrapper.style5 table tfoot {
-				border-color: #dfdfdf;
+				border-color: var(--un);
 			}
 
 			.wrapper.style5 table.alt tbody tr td {
-				border-color: #dfdfdf;
+				border-color: var(--un);
 			}
 
 			.wrapper.style5 input[type="submit"],
@@ -3303,8 +3354,8 @@ input, select, textarea {
 			.wrapper.style5 input[type="button"],
 			.wrapper.style5 button,
 			.wrapper.style5 .button {
-				box-shadow: inset 0 0 0 2px #dfdfdf;
-				color: #2E3842;
+				box-shadow: inset 0 0 0 2px var(--un);
+				color: var(--un);
 			}
 
 				.wrapper.style5 input[type="submit"]:hover,
@@ -3312,7 +3363,7 @@ input, select, textarea {
 				.wrapper.style5 input[type="button"]:hover,
 				.wrapper.style5 button:hover,
 				.wrapper.style5 .button:hover {
-					background-color: rgba(0, 0, 0, 0.0375);
+					background-color: var(--un);
 				}
 
 				.wrapper.style5 input[type="submit"]:active,
@@ -3320,13 +3371,13 @@ input, select, textarea {
 				.wrapper.style5 input[type="button"]:active,
 				.wrapper.style5 button:active,
 				.wrapper.style5 .button:active {
-					background-color: rgba(0, 0, 0, 0.1);
+					background-color: var(--un);
 				}
 
 			@media screen and (max-width: 736px) {
 
 				.wrapper.style5 .features li {
-					border-top-color: #dfdfdf;
+					border-top-color: var(--un);
 				}
 
 			}
@@ -3359,7 +3410,7 @@ input, select, textarea {
 	}
 
 		#page-wrapper:before {
-			background: rgba(0, 0, 0, 0);
+			background: var(--un);
 			content: '';
 			display: block;
 			display: none;
@@ -3381,8 +3432,8 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #21b2a6;
-		color: #ffffff;
+		background: var(--un);
+		color: var(--un);
 		height: 100%;
 		max-width: 80%;
 		overflow-y: auto;
@@ -3400,7 +3451,7 @@ input, select, textarea {
 		}
 
 			#menu ul > li {
-				border-top: solid 1px rgba(0, 0, 0, 0.125);
+				border-top: solid 1px var(--un);
 				margin: 0.5em 0 0 0;
 				padding: 0.5em 0 0 0;
 			}
@@ -3475,7 +3526,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease;
 		-ms-transition: background-color 0.2s ease;
 		transition: background-color 0.2s ease;
-		background: #2e3842;
+		background: var(--un);
 		height: 3em;
 		left: 0;
 		line-height: 3em;
@@ -3534,7 +3585,7 @@ input, select, textarea {
 
 					#header nav > ul > li > a {
 						border: 0;
-						color: #fff;
+						color: var(--un);
 						display: block;
 						font-size: 0.8em;
 						letter-spacing: 0.225em;
@@ -3583,7 +3634,7 @@ input, select, textarea {
 					}
 
 		#header.alt {
-			background: transparent;
+			background: var(--un);
 		}
 
 			#header.alt h1 {
@@ -3593,194 +3644,227 @@ input, select, textarea {
 
 /* Banner */
 
-	#banner {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-flex-direction: column;
-		-webkit-flex-direction: column;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		-moz-justify-content: center;
-		-webkit-justify-content: center;
-		-ms-justify-content: center;
-		justify-content: center;
-		cursor: default;
-		height: 100vh;
-		min-height: 35em;
-		overflow: hidden;
-		position: relative;
-		text-align: center;
-	}
+#banner {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-flex-direction: column;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	cursor: default;
+	height: 100vh;
+	min-height: 35em;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
 
-		#banner h2 {
-			-moz-transform: scale(1);
-			-webkit-transform: scale(1);
-			-ms-transform: scale(1);
-			transform: scale(1);
-			-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
-			-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
-			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
-			transition: transform 0.5s ease, opacity 0.5s ease;
-			display: inline-block;
-			font-size: 1.75em;
-			opacity: 1;
-			padding: 0.35em 1em;
-			position: relative;
-			z-index: 1;
-		}
-
-			#banner h2:before, #banner h2:after {
-				-moz-transition: width 0.85s ease;
-				-webkit-transition: width 0.85s ease;
-				-ms-transition: width 0.85s ease;
-				transition: width 0.85s ease;
-				-moz-transition-delay: 0.25s;
-				-webkit-transition-delay: 0.25s;
-				-ms-transition-delay: 0.25s;
-				transition-delay: 0.25s;
-				/* Here bars around name */
-				background: #fff;
-				content: '';
-				display: block;
-				height: 2px;
-				position: absolute;
-				width: 100%;
-			}
-
-			#banner h2:before {
-				top: 0;
-				left: 0;
-			}
-
-			#banner h2:after {
-				bottom: 0;
-				right: 0;
-			}
-
-		#banner p {
-			letter-spacing: 0.225em;
-			text-transform: uppercase;
-		}
-
-			#banner p a {
-				color: inherit;
-			}
-
-		#banner .more {
-			-moz-transition: -moz-transform 0.75s ease, opacity 0.75s ease;
-			-webkit-transition: -webkit-transform 0.75s ease, opacity 0.75s ease;
-			-ms-transition: -ms-transform 0.75s ease, opacity 0.75s ease;
-			transition: transform 0.75s ease, opacity 0.75s ease;
-			-moz-transition-delay: 3.5s;
-			-webkit-transition-delay: 3.5s;
-			-ms-transition-delay: 3.5s;
-			transition-delay: 3.5s;
-			-moz-transform: translateY(0);
-			-webkit-transform: translateY(0);
-			-ms-transform: translateY(0);
-			transform: translateY(0);
-			border: none;
-			bottom: 0;
-			color: inherit;
-			font-size: 0.8em;
-			height: 8.5em;
-			left: 50%;
-			letter-spacing: 0.225em;
-			margin-left: -8.5em;
-			opacity: 1;
-			outline: 0;
-			padding-left: 0.225em;
-			position: absolute;
-			text-align: center;
-			text-transform: uppercase;
-			width: 16em;
-			z-index: 1;
-		}
-
-			#banner .more:after {
-				background-image: url("images/arrow.svg");
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: contain;
-				bottom: 4em;
-				content: '';
-				display: block;
-				height: 1.5em;
-				left: 50%;
-				margin: 0 0 0 -0.75em;
-				position: absolute;
-				width: 1.5em;
-			}
-
-		#banner:after {
-			pointer-events: none;
-			-moz-transition: opacity 3s ease-in-out;
-			-webkit-transition: opacity 3s ease-in-out;
-			-ms-transition: opacity 3s ease-in-out;
-			transition: opacity 3s ease-in-out;
-			-moz-transition-delay: 1.25s;
-			-webkit-transition-delay: 1.25s;
-			-ms-transition-delay: 1.25s;
-			transition-delay: 1.25s;
-			content: '';
-			background: #2e3842;
-			display: block;
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			left: 0;
-			top: 0;
-			opacity: 0;
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#banner {
-				padding: 7em 3em 5em 3em ;
-				height: auto;
-				min-height: 0;
-			}
-
-				#banner h2 {
-					font-size: 1.25em;
-				}
-
-				#banner br {
-					display: none;
-				}
-
-				#banner .more {
-					display: none;
-				}
-
-		}
-
-	body.is-preload #banner h2 {
-		-moz-transform: scale(0.95);
-		-webkit-transform: scale(0.95);
-		-ms-transform: scale(0.95);
-		transform: scale(0.95);
-		opacity: 0;
-	}
-
-		body.is-preload #banner h2:before, body.is-preload #banner h2:after {
-			width: 0;
-		}
-
-	body.is-preload #banner .more {
-		-moz-transform: translateY(8.5em);
-		-webkit-transform: translateY(8.5em);
-		-ms-transform: translateY(8.5em);
-		transform: translateY(8.5em);
-		opacity: 0;
-	}
-
-	body.is-preload #banner:after {
+	#banner h2 {
+		-moz-transform: scale(1);
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+		-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
+		-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+		-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
+		transition: transform 0.5s ease, opacity 0.5s ease;
+		display: inline-block;
+		font-size: 1.75em;
 		opacity: 1;
+		padding: 0.35em 1em;
+		position: relative;
+		z-index: 1;
 	}
 
+		#banner h2:before, #banner h2:after {
+			-moz-transition: width 0.85s ease;
+			-webkit-transition: width 0.85s ease;
+			-ms-transition: width 0.85s ease;
+			transition: width 0.85s ease;
+			-moz-transition-delay: 0.25s;
+			-webkit-transition-delay: 0.25s;
+			-ms-transition-delay: 0.25s;
+			transition-delay: 0.25s;
+			/* Here bars around name */
+			background: var(--text);
+			content: '';
+			display: block;
+			height: 2px;
+			position: absolute;
+			width: 100%;
+		}
+
+		#banner h2:before {
+			top: 0;
+			left: 0;
+		}
+
+		#banner h2:after {
+			bottom: 0;
+			right: 0;
+		}
+
+	#banner p {
+		letter-spacing: 0.225em;
+		text-transform: uppercase;
+	}
+
+		#banner p a {
+			color: inherit;
+		}
+
+	#banner .more {
+		-moz-transition: -moz-transform 0.75s ease, opacity 0.75s ease;
+		-webkit-transition: -webkit-transform 0.75s ease, opacity 0.75s ease;
+		-ms-transition: -ms-transform 0.75s ease, opacity 0.75s ease;
+		transition: transform 0.75s ease, opacity 0.75s ease;
+		-moz-transition-delay: 3.5s;
+		-webkit-transition-delay: 3.5s;
+		-ms-transition-delay: 3.5s;
+		transition-delay: 3.5s;
+		-moz-transform: translateY(0);
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+		border: none;
+		bottom: 0;
+		color: inherit;
+		font-size: 0.8em;
+		height: 8.5em;
+		left: 50%;
+		letter-spacing: 0.225em;
+		margin-left: -8.5em;
+		opacity: 1;
+		outline: 0;
+		padding-left: 0.225em;
+		position: absolute;
+		text-align: center;
+		text-transform: uppercase;
+		width: 16em;
+		z-index: 1;
+	}
+
+		#banner .more:after {
+			background-image: url("images/arrow.svg");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			bottom: 4em;
+			content: '';
+			display: block;
+			height: 1.5em;
+			left: 50%;
+			margin: 0 0 0 -0.75em;
+			position: absolute;
+			width: 1.5em;
+		}
+
+	#banner:after {
+		pointer-events: none;
+		-moz-transition: opacity 3s ease-in-out;
+		-webkit-transition: opacity 3s ease-in-out;
+		-ms-transition: opacity 3s ease-in-out;
+		transition: opacity 3s ease-in-out;
+		-moz-transition-delay: 1.25s;
+		-webkit-transition-delay: 1.25s;
+		-ms-transition-delay: 1.25s;
+		transition-delay: 1.25s;
+		content: '';
+		background: var(--banner);
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		opacity: 0;
+	}
+	#banner .icons {
+		/* -moz-transition: -moz-transform 0.75s ease, opacity 0.75s ease;
+		-webkit-transition: -webkit-transform 0.75s ease, opacity 0.75s ease;
+		-ms-transition: -ms-transform 0.75s ease, opacity 0.75s ease;
+		transition: transform 0.75s ease, opacity 0.75s ease;
+		-moz-transition-delay: 3.5s;
+		-webkit-transition-delay: 3.5s;
+		-ms-transition-delay: 3.5s;
+		transition-delay: 3.5s;
+		-moz-transform: translateY(0);
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+		border: none;
+		/* bottom: 0; */
+		/* color: inherit; */
+		/* font-size: 0.8em; */
+		/* height: 8.5em;
+		left: 50%;
+		letter-spacing: 0.225em;
+		margin-left: -8.5em;
+		opacity: 1;
+		outline: 0;
+		padding-left: 0.225em;
+		position: absolute;
+		text-align: center;
+		text-transform: uppercase;
+		width: 16em;
+		z-index: 1; */
+	}
+		#banner .icons a:hover {
+			color: var(--un);
+		}
+
+
+	@media screen and (max-width: 736px) {
+
+		#banner {
+			padding: 7em 3em 5em 3em ;
+			height: auto;
+			min-height: 0;
+		}
+
+			#banner h2 {
+				font-size: 1.25em;
+			}
+
+			#banner br {
+				display: none;
+			}
+
+			#banner .more {
+				display: none;
+			}
+
+	}
+
+body.is-preload #banner h2 {
+	-moz-transform: scale(0.95);
+	-webkit-transform: scale(0.95);
+	-ms-transform: scale(0.95);
+	transform: scale(0.95);
+	opacity: 0;
+}
+
+	body.is-preload #banner h2:before, body.is-preload #banner h2:after {
+		width: 0;
+	}
+
+body.is-preload #banner .more {
+	-moz-transform: translateY(8.5em);
+	-webkit-transform: translateY(8.5em);
+	-ms-transform: translateY(8.5em);
+	transform: translateY(8.5em);
+	opacity: 0;
+}
+
+body.is-preload #banner:after {
+	opacity: 1;
+}
 /* CTA */
 
 	#cta .inner {
@@ -3917,7 +4001,7 @@ input, select, textarea {
 
 	#footer {
 		padding: 6em 0 4em 0 ;
-		background-color: #1d242a;
+		background-color: var(--un);
 		text-align: center;
 	}
 
@@ -3926,15 +4010,15 @@ input, select, textarea {
 		}
 
 			#footer .icons a {
-				color: rgba(255, 255, 255, 0.5);
+				color: var(--button);
 			}
 
 				#footer .icons a:hover {
-					color: #fff;
+					color: var(--un);
 				}
 
 		#footer .copyright {
-			color: rgba(255, 255, 255, 0.5);
+			color: var(--text);
 			font-size: 0.8em;
 			letter-spacing: 0.225em;
 			list-style: none;
@@ -3943,7 +4027,7 @@ input, select, textarea {
 		}
 
 			#footer .copyright li {
-				border-left: solid 1px rgba(255, 255, 255, 0.5);
+				border-left: solid 1px var(--text);
 				display: inline-block;
 				line-height: 1em;
 				margin-left: 1em;
@@ -3961,7 +4045,7 @@ input, select, textarea {
 				}
 
 					#footer .copyright li a:hover {
-						color: #fff;
+						color: var(--un);
 					}
 
 				@media screen and (max-width: 480px) {
@@ -4008,7 +4092,8 @@ input, select, textarea {
 
 	body.landing #footer {
 		/*  Here change colour of footer  */
-		background-color: rgba(29, 36, 42, 0.9);
+		background-color: var(--body);
+		/* background-color: rgba(29, 36, 42, 0.9); */
 	}
 
 	body.is-mobile.landing #page-wrapper {
@@ -4018,7 +4103,7 @@ input, select, textarea {
 	body.is-mobile.landing #banner,
 	body.is-mobile.landing .wrapper.style4 {
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/background1.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-position: center center;
@@ -4027,5 +4112,6 @@ input, select, textarea {
 	}
 
 	body.is-mobile.landing #footer {
-		background-color: #1d242a;
+		background-color: var(--body);
+		/* background-color: #1d242a; */
 	}
